@@ -1,0 +1,594 @@
+html {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-linear-gradient(#0954C5, #225515);
+  background: linear-gradient(#0954C5, #225515);
+  background-repeat: no-repeat;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#top-holder {
+  max-width: 95%;
+  min-width: 95%;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#figure-holder {
+  min-width: 10%;
+}
+
+#figure-holder figure {
+  min-width: 15vw;
+  min-height: 15vh;
+  margin: 10px 0 0 10px;
+  background-image: url('../Resources/SiglaTrWheater.png');
+	background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#title-holder {
+  margin: 10px auto;    
+  -webkit-box-pack: center;    
+      -ms-flex-pack: center;    
+          justify-content: center;
+}
+
+#title-holder h1 {
+  color: white;
+  font-family: Merriweather;
+}
+
+#content-holder {
+  max-width: 95%;
+  min-width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#form-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0 0 10px;
+}
+
+#form-holder label {
+  color: white;
+}
+
+#form-holder form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0 0 0;
+}
+
+#inputLocation {
+  border-radius: 10px;
+  text-align: center;
+}
+
+#inputLocation:focus {
+  outline: none;
+}
+
+#submit {
+  margin: 10px auto;
+  background-color:transparent;
+  border-color: #F9D71C;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#submit:focus {
+  outline: none;
+}
+
+#result-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 15px 0 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#location,
+#degree {
+  margin: 30px 0;
+  color: white;
+  font-size: 1.5em;
+}
+
+#find-me {
+  min-height: 10vh;
+  min-width: 10vw;
+  background-color: transparent;
+  background-image: url('../Resources/LocationSing.png');
+	background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:none; 
+  margin: 0 0 20px 0;
+}
+
+#find-me:focus {
+  outline: none;
+}
+
+#map-link {
+  text-decoration: none;
+  color: yellow;
+}
+
+#map-link {
+  white-space: pre;
+}
+ /*UP IS FIXED FOR PREFIXEZ*/
+ /*MEDIA QUERIES SMARTPHONE*/
+
+@media only screen and (min-width: 320px) and (max-width: 358px) {
+  #top-holder {
+    padding: 0;
+  }
+  #figure-holder {
+    padding: 0;
+  }
+  #figure-holder figure {
+  margin: auto 0;
+  }
+  #title-holder h1 {
+    font-size: 1em;
+  }
+  #content-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+  }
+  #form-holder {
+    margin: 15px 0 0 0;
+    min-width: 100%;
+  }
+  #form-holder label {
+    font-size: 1em;
+  }
+  #form-holder form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  #inputLocation {
+    width: 90%;
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  #submit {
+    font-size: 1em;
+  }
+  #result-holder {
+    padding: 0;
+    margin: 0;
+  }
+  #location {
+    margin: 10px 0 0 0;
+    text-align: center;
+  }
+  #degree {
+    margin: 10px 0;
+  }
+  #find-me {
+    margin: 0;
+    padding: 0;
+  }
+  #status {
+  font-size: 1em;
+  }
+  #map-link {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 359px) and (max-width: 373px) {
+  #top-holder {
+    padding: 0;
+  }
+  #figure-holder {
+    padding: 0;
+  }
+  #figure-holder figure {
+  margin: auto 0;
+  }
+  #title-holder h1 {
+    font-size: 1.2em;
+  }
+  #content-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+  }
+  #form-holder {
+    margin: 25px 0 0 0;
+    min-width: 100%;
+  }
+  #form-holder label {
+    font-size: 1.2em;
+  }
+  #form-holder form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  #inputLocation {
+    width: 90%;
+    font-size: 1.2em;
+    margin: 10px 0 5px 0;
+  }
+  #submit {
+    font-size: 1.2em;
+  }
+  #result-holder {
+    padding: 0;
+    margin: 0;
+  }
+  #location {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  #degree {
+    margin: 20px 0;
+  }
+  #find-me {
+    margin: 0;
+    padding: 0;
+  }
+  #status {
+  font-size: 1.2em;
+  }
+  #map-link {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media only screen and (min-width: 374px) and (max-width: 410px) {
+  #top-holder {
+    padding: 0;
+  }
+  #figure-holder {
+    padding: 0;
+  }
+  #figure-holder figure {
+  margin: auto 0;
+  }
+  #title-holder h1 {
+    font-size: 1.2em;
+  }
+  #content-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+  }
+  #form-holder {
+    margin: 25px 0 0 0; 
+    min-width: 100%;
+  }
+  #form-holder label {
+    font-size: 1.2em;
+  }
+  #form-holder form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  #inputLocation {
+    width: 90%;
+    font-size: 1.2em;
+    margin: 10px 0 5px 0;
+  }
+  #submit {
+    font-size: 1.2em;
+  }
+  #result-holder {
+    padding: 0;
+    margin: 0;
+  }
+  #location {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  #degree {
+    margin: 20px 0;
+  }
+  #find-me {
+    margin: 0;
+    padding: 0;
+  }
+  #status {
+  font-size: 1.2em;
+  }
+  #map-link {
+    font-size: 1.2em;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media only screen and (min-width: 411px) and (max-width: 478px) {
+  #top-holder { 
+    padding: 0;
+  }
+  #figure-holder {
+    padding: 0;
+  }
+  #figure-holder figure {
+  margin: auto 0;
+  }
+  #title-holder h1 {
+    font-size: 1.4em;
+  }
+  #content-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+  }
+  #form-holder {
+    margin: 25px 0 0 0;
+    min-width: 100%;
+  }
+  #form-holder label {
+    font-size: 1.4em;
+  }
+  #form-holder form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  #inputLocation {
+    width: 90%;
+    font-size: 1.4em;
+    margin: 10px 0 5px 0;
+  }
+  #submit {
+    font-size: 1.4em;
+  }
+  #result-holder {
+    padding: 0;
+    margin: 0;
+  }
+  #location {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  #degree {
+    margin: 20px 0;
+  }
+  #find-me {
+    margin: 0;
+    padding: 0;
+  }
+  #status {
+  font-size: 1.4em;
+  }
+  #map-link {
+    font-size: 1.4em;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media only screen and (min-width: 479px) and (max-width: 618px) {
+  #top-holder {
+    padding: 0;
+  }
+  #figure-holder {
+    padding: 0;
+  }
+  #figure-holder figure {
+  margin: auto 0;
+  }
+  #title-holder h1 {
+    font-size: 1.66em;
+  }
+  #content-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+  }
+  #form-holder {
+    margin: 30px 0 0 0;
+    min-width: 100%;
+  }
+  #form-holder label {
+    font-size: 1.66em;
+  }
+  #form-holder form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  #inputLocation {
+    width: 90%;
+    font-size: 1.66em;
+    margin: 10px 0 5px 0;
+  }
+  #submit {
+    font-size: 1.66em;
+  }
+  #result-holder {
+    padding: 0;
+    margin: 0;
+  }
+  #location {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  #degree {
+    margin: 20px 0;
+  }
+  #find-me {
+    margin: 0;
+    padding: 0;
+  }
+  #status {
+  font-size: 1.66em;
+  }
+  #map-link {
+    font-size: 1.66em;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media only screen and (min-width: 619px) and (max-width: 766px) {
+  #top-holder {
+    padding: 0;
+  }
+  #figure-holder {
+    padding: 0;
+  }
+  #figure-holder figure {
+  margin: auto 0;
+  }
+  #title-holder h1 {
+    font-size: 2em;
+  }
+  #content-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+  }
+  #form-holder {
+    margin: 40px 0 0 0;
+    min-width: 100%;
+  }
+  #form-holder label {
+    font-size: 2em;
+  }
+  #form-holder form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  #inputLocation {
+    width: 90%;
+    font-size: 2em;
+    margin: 10px 0 5px 0;
+  }
+  #submit {
+    font-size: 2em;
+  }
+  #result-holder {
+    padding: 0;
+    margin: 0;
+  }
+  #location {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  #degree {
+    margin: 20px 0;
+  }
+  #find-me {
+    margin: 0;
+    padding: 0;
+  }
+  #status {
+  font-size: 2em;
+  }
+  #map-link {
+    font-size: 2em;
+    margin: 0 0 30px 0;
+  }
+}
+
+ /*MEDIA QUERIES TABLET*/

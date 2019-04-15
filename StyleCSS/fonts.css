@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url("../Fonts/Merriweather/Merriweather-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../Fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../Fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf") format("truetype");
+}
+
+#title-holder h1,
+#form-holder label,
+#inputLocation,
+#submit,
+#location,
+#degree,
+#status,
+#map-link {
+  font-family: Merriweather, Lato, RobotoCondensed, Arial, Helvetica, sans-serif;
+}
