@@ -13,7 +13,7 @@ function geoFindMe() {
     const longitude = position.coords.longitude;
 
     status.textContent = '';
-    mapLink.href = `https://api.darksky.net/forecast/790b531e2cdaaf14111585f0f9a908c7/#{latitude},#{longitude}`;
+    mapLink.href = `https://api.darksky.net/forecast/790b531e2cdaaf14111585f0f9a908c7/${latitude},${longitude}`;
     mapLink.textContent = "Click pentru zona ta pe harta" + "\r\n" + "Coordonatele tale sunt:" + "\r\n" + `longitudine: ${longitude}` + "\r\n" + `latitudine: ${latitude}`;
   }
 
